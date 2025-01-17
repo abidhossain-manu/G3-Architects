@@ -4,18 +4,19 @@ body {
   font-family: "Work Sans", serif;
 }
 
-section {
-  padding: 50px 0;
-}
-
 header {
   background-color: rgba(255, 144, 14, 0.1);
 }
 
 nav,
+main,
 .banner {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+main > section {
+  margin-top: 130px;
 }
 
 nav ul {
@@ -63,6 +64,7 @@ nav ul li a {
   font-size: 4rem;
   font-weight: bold;
   color: #131313;
+  margin-bottom: 40px;
 }
 
 .banner-content p {
@@ -85,4 +87,45 @@ nav ul li a {
   font-weight: 600;
   border-radius: 8px;
   border: none;
+}
+
+/* Team and Feature Related Style */
+.teams {
+  align-items: center;
+}
+
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.our-feature {
+  margin-left: 73px;
+  max-width: 537px;
+}
+
+.our-feature h3 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+#quick-list {
+  font-weight: 500;
+  color: #727272;
+}
+
+.primary-color {
+  color: #ff900e;
+}
+
+/* Responsive Media Query */
+
+@media screen and (max-width: 576px) {
+  nav,
+  .navbar,
+  nav ul,
+  nav ul li a {
+    flex-direction: column;
+  }
 }
