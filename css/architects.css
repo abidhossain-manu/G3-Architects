@@ -320,9 +320,10 @@ footer {
   padding: 50px;
   mar
 }
+
 footer p {
   color: #424242;
   text-align: center;
   font-weight: 400px;
-  font-size: px;
+  font-size: 1.2rem;
 }
